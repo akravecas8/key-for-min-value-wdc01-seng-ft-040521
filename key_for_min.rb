@@ -10,10 +10,9 @@ def key_for_min_value(name_hash)
   name_hash.each do |x,y|
     if min == nil
       min = y
-      binding.pry
     end
     if y < min
-       min = y
+      min = y
       key_for_min = x
     end
     end
