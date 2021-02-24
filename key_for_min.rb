@@ -11,10 +11,11 @@ def key_for_min_value(name_hash)
     if min == nil
       min = y
       binding.pry
-      if y < min
-        min = y
-        key_for_min = x
-      end
+    end
+    if y < min
+       min = y
+      key_for_min = x
+    end
     end
   end
   key_for_min
